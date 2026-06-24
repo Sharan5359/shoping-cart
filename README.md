@@ -1,7 +1,32 @@
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
+    git clone https://github.com/your-username/shoping-cart.git
+    cd shoping-cart
+    ```
 
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Set up environment variables:**
+
+    Create a `.env` file in the root directory and add the following:
+
+    ```
+    DATABASE_URL="postgresql://user:password@host:port/database"
+    JWT_SECRET="your_jwt_secret"
+    ```
+
+    Replace `user`, `password`, `host`, `port`, and `database` with your PostgreSQL credentials.
+
+4.  **Run database migrations:**
+
+    ```bash
+    npm run typeorm migration:run
+    
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
